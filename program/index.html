@@ -8,14 +8,13 @@
   </head>
   <body>
     <main class="main">
-      <section class="header container">
+      <header class="header container">
         <img
           class="header__logo"
           src="../img/logo_car_energy.svg"
-          alt="logo_car_energy"
           width="202"
           height="60"
-          alt="logo_car_energy"
+          alt="Логотип кошачьей энергии"
         />
         <ul class="header__menu">
           <li class="header__item">
@@ -28,63 +27,94 @@
             <a class="header_link" href="#">Выбор программы</a>
           </li>
         </ul>
-      </section>
+      </header>
 
       <div class="select-program">
         <h2 class="select-program__title title">Подбор программы</h2>
-        <form class="" action="" method="GET">
+        <form class="select-program__form" action="" method="GET">
           <legend class="select-program__decription">
             Заполните анкету и мы подберем программу питания для вашего кота
           </legend>
           <ul class="select-program__data" role="none">
             <li class="select-program__item">
               <label class="select-program__text" for="name">Имя:*</label>
-              <input id="name" type="text" name="name" />
+              <input
+                class="select-program__input"
+                id="name"
+                type="text"
+                name="name"
+              />
             </li>
             <li class="select-program__item">
               <label class="select-program__text" for="weight"
                 >Вес (кг):*</label
               >
-              <input id="weight" type="text" name="weight" />
+              <input
+                class="select-program__input"
+                id="weight"
+                type="number"
+                name="weight"
+              />
             </li>
             <li class="select-program__item">
               <label class="select-program__text" for="age"
                 >Возраст (лет):</label
               >
-              <input id="age" type="text" name="age" />
+              <input
+                class="select-program__input"
+                id="age"
+                type="number"
+                name="age"
+              />
             </li>
           </ul>
           <ul class="select-program__data">
             <li class="select-program__item">
-              <input id="slimming" type="radio" name="target" />
+              <input
+                class="select-program__input"
+                id="slimming"
+                type="radio"
+                name="target"
+              />
               <label class="select-program__text" for="slimming"
                 >Похудение</label
               >
             </li>
             <li class="select-program__item">
-              <input id="weight-gain" type="radio" name="target" />
+              <input
+                class="select-program__input"
+                id="weight-gain"
+                type="radio"
+                name="target"
+              />
               <label class="select-program__text" for="weight-gain"
                 >Набор массы</label
               >
             </li>
             <li class="select-program__item">
-              <input id="not-know" type="radio" name="target" />
+              <input
+                class="select-program__input"
+                id="not-know"
+                type="radio"
+                name="target"
+              />
               <label class="select-program__text" for="not-know"
                 >Не знаю (Нужен ваш совет)</label
               >
             </li>
           </ul>
 
-          <section class="contacts">
-            <h3 class="contacts__subtitle subtitle">
+          <fieldset class="contacts">
+            <legend class="contacts__subtitle subtitle">
               Контактные данные (владельца кота)
-            </h3>
+            </legend>
             <ul class="contacts__data" role="none">
               <li class="contacts__item">
                 <label class="contacts__text" for="mail">E-mail:*</label>
                 <input
+                  class="contacts__input"
                   id="mail"
-                  type="text"
+                  type="email"
                   name="mail"
                   placeholder="kuklachev@gmail.com"
                 />
@@ -92,30 +122,34 @@
               <li class="contacts__item">
                 <label class="contacts__text" for="phone">Телефон:*</label>
                 <input
+                  class="contacts__input"
                   id="phone"
-                  type="text"
+                  type="tel"
                   name="phone"
                   placeholder="8 (960) 900-60-90"
                 />
               </li>
             </ul>
-          </section>
+          </fieldset>
 
-          <section class="comments">
-            <h3 class="comments__subtitle subtitle">Комментарий</h3>
+          <fieldset class="comments">
+            <legend class="comments__subtitle subtitle">Комментарий</legend>
             <textarea
               rows="10"
               cols="45"
               name="text"
               placeholder="Расскажите обо всех повадках кота"
             ></textarea>
-          </section>
+          </fieldset>
 
-          <section class="additionally">
-            <h3 class="additionally__subtitle subtitle">Дополнительно</h3>
+          <fieldset class="additionally">
+            <legend class="additionally__subtitle subtitle">
+              Дополнительно
+            </legend>
             <ul class="additionally__list">
               <li class="additionally__item">
                 <input
+                  class="additionally__input"
                   id="sweetener"
                   type="checkbox"
                   name="sweetener"
@@ -126,23 +160,38 @@
                 >
               </li>
               <li class="additionally__item">
-                <input id="water" type="checkbox" name="water" />
+                <input
+                  class="additionally__input"
+                  id="water"
+                  type="checkbox"
+                  name="water"
+                />
                 <label class="additionally__text" for="water"
                   >Питьевая вода</label
                 >
               </li>
               <li class="additionally__item">
-                <input id="milk" type="checkbox" name="milk" />
+                <input
+                  class="additionally__input"
+                  id="milk"
+                  type="checkbox"
+                  name="milk"
+                />
                 <label class="additionally__text" for="milk">Молоко</label>
               </li>
               <li class="additionally__item">
-                <input id="vitamins" type="checkbox" name="vitamins" />
+                <input
+                  class="additionally__input"
+                  id="vitamins"
+                  type="checkbox"
+                  name="vitamins"
+                />
                 <label class="additionally__text" for="vitamins"
                   >Витамины</label
                 >
               </li>
             </ul>
-          </section>
+          </fieldset>
           <div class="select-program__submit">
             <input
               class="select-program__btn button"
