@@ -1,0 +1,51 @@
+.advantages__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__title {
+  margin-bottom: 28px;
+}
+
+ol {
+  counter-reset: section;
+  list-style-type: none;
+}
+
+.advantages__description::before {
+  counter-increment: section;
+  content: counters(section, ".") " ";
+  color: #f2f2f2;
+  font-size: 281px;
+  top: 123px;
+  left: 13px;
+  position: relative;
+  z-index: -100;
+}
+
+.advantages__description {
+  background-repeat: no-repeat;
+  max-width: 245px;
+  list-style-position: inside;
+  z-index: 100;
+}
+
+.advantages__description:nth-child(1) {
+  list-style-image: url(../img/sheet.png);
+}
+
+.advantages__description:nth-child(2) {
+  list-style-image: url(../img/powder.png);
+}
+
+.advantages__description:nth-child(3) {
+  list-style-image: url(../img/fork.png);
+}
+
+.advantages__description:nth-child(4) {
+  list-style-image: url(../img/time.png);
+}
+
+.advantages__text {
+  margin-top: 25px;
+}

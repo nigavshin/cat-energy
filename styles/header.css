@@ -1,0 +1,58 @@
+.main-screen {
+  background-image: url(../img/index-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-top: 54px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  max-width: 477px;
+  width: 100%;
+}
+
+.header_link {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.main-screen__content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  left: 83px;
+  bottom: 24px;
+}
+
+.main-screen__title {
+  font-size: 60px;
+  margin-bottom: 33px;
+  max-width: 450px;
+  line-height: 60px;
+  text-transform: none;
+}
+
+.main-screen__description {
+  font-size: 20px;
+  margin-bottom: 53px;
+}
+
+.main-screen__button {
+  width: 245px;
+  height: 52px;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #68b738;
+}
+
+.main-screen__product-pic {
+  margin-top: 84px;
+}
