@@ -13,6 +13,7 @@
   margin: 0 auto;
   max-width: 1220px;
 }
+
 .example__description {
   max-width: 430px;
   margin-top: 55px;
@@ -51,6 +52,7 @@
   top: 10px;
   z-index: 100;
 }
+
 .line-weight,
 .line-time {
   position: relative;

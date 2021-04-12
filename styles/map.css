@@ -25,7 +25,7 @@
 
 .map__adress {
   font-size: 16px;
-  font-family: "Arial";
+  font-family: "Arial",sans-serif;
   color: #444444;
   line-height: 1.25;
   text-align: left;

@@ -63,7 +63,7 @@
 
 .catalog__cell {
   font-size: 16px;
-  font-family: "Arial";
+  font-family: "Arial",sans-serif;
   text-transform: none;
   color: #444444;
   line-height: 1;
@@ -92,7 +92,7 @@
 
 .catalog__description {
   font-size: 16px;
-  font-family: "Arial";
+  font-family: "Arial",sans-serif;
   color: #444444;
   line-height: 1.2;
   text-align: center;
@@ -102,7 +102,7 @@
 
 .catalog__btn--disabled {
   font-size: 16px;
-  font-family: "Oswald";
+  font-family: "Oswald",sans-serif;
   color: #444444;
   background-color: #f2f2f2;
   line-height: 1.25;
@@ -112,7 +112,7 @@
 
 .catalog__btn--disabled:hover {
   font-size: 16px;
-  font-family: "Oswald";
+  font-family: "Oswald",sans-serif;
   color: rgb(68, 68, 68);
   text-transform: uppercase;
   line-height: 1.25;

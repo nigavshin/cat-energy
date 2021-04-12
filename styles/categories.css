@@ -45,6 +45,6 @@
 }
 
 .categories__button:active {
-opacity: 0.3;
-outline: none;
+  opacity: 0.3;
+  outline: none;
 }

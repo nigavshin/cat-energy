@@ -1,15 +1,12 @@
 .advantages__list {
   display: flex;
   justify-content: space-between;
+  counter-reset: section;
+  list-style-type: none;
 }
 
 .advantages__title {
   margin-bottom: 28px;
-}
-
-ol {
-  counter-reset: section;
-  list-style-type: none;
 }
 
 .advantages__description::before {

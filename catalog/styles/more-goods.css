@@ -1,6 +1,6 @@
 .more-goods__title {
   font-size: 36px;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   color: #111111;
   text-align: left;
   text-transform: none;
@@ -36,6 +36,7 @@
   width: 895px;
   max-width: 100%;
   border-top: 1px solid #cdcdcd;
+  border-spacing: 0;
 }
 
 .more-goods__table td:nth-child(4) {
@@ -51,7 +52,7 @@
 .more-goods__cell {
   text-transform: none;
   font-size: 16px;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   color: #444444;
   padding: 16px 0;
 }
@@ -66,7 +67,7 @@
   width: 245px;
   height: 40px;
   font-size: 16px;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   color: #ffffff;
   line-height: 1.25;
   text-align: center;
@@ -84,7 +85,7 @@
 
 .more-goods__offer {
   font-size: 16px;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   color: #ffffff;
   line-height: 1.2;
   text-align: center;

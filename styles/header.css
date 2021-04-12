@@ -90,7 +90,8 @@
 
 .main-screen__button:active {
   background-color: #5eaa2f;
-  color: rgba(255, 255, 255, 0.302);
+  color: #ffffff;
+  opacity: 0.3;
 }
 
 .main-screen__product-pic {
