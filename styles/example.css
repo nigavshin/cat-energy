@@ -182,3 +182,7 @@
 .example__btn:hover {
   border-bottom: 1px solid #818181;
 }
+
+.example__btn:active {
+  border-bottom: none;
+}

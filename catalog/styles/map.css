@@ -1,0 +1,38 @@
+#map {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  bottom: 123px;
+}
+
+.map__content {
+  display: flex;
+  justify-content: space-between;
+  width: 570px;
+  background-color: #ffffff;
+  position: relative;
+  top: 170px;
+  z-index: 1200;
+  padding: 70px 76px 54px;
+}
+
+.map__cooperation {
+  font-size: 20px;
+  line-height: 1.25;
+  text-align: left;
+  width: 154px;
+}
+
+.map__adress {
+  font-size: 16px;
+  font-family: "Arial";
+  color: #444444;
+  line-height: 1.25;
+  text-align: left;
+  max-width: 155px;
+  text-transform: none;
+}
+
+.map__adress:first-child {
+  margin-bottom: 20px;
+}

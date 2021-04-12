@@ -41,5 +41,10 @@
 }
 
 .categories__button:hover {
-  background-position: 142px;
+  background-image: url(../img/right-arrow-verylong.png);
+}
+
+.categories__button:active {
+opacity: 0.3;
+outline: none;
 }

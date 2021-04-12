@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Выбор программы</title>
-    <link rel="preload" href="./fonts/Oswald/Oswald-Regular.woff2" as="font">
+    <title>Подбор программы</title>
   </head>
   <body>
     <main class="main">
       <header class="header container">
-        <img
-          class="header__logo"
-          src="../img/logo_car_energy.svg"
-          width="202"
-          height="60"
-          alt="Логотип кошачьей энергии"
-        />
+        <a class="header__logo-link" href="#">
+          <img
+            class="header__logo"
+            src="../img/logo_car_energy.svg"
+            width="202"
+            height="60"
+            alt="Логотип кошачьей энергии"
+        /></a>
         <ul class="header__menu">
           <li class="header__item">
             <a class="header_link" href="#">Главная</a>
@@ -25,7 +25,7 @@
             <a class="header_link" href="#">Каталог продукции</a>
           </li>
           <li class="header__item">
-            <a class="header_link" href="#">Выбор программы</a>
+            <a class="header_link" href="#">Подбор программы</a>
           </li>
         </ul>
       </header>
@@ -204,14 +204,21 @@
         </form>
       </div>
 
-      <section class="map">
-        <div class="map__content">
-          <p class="map__cooperation">Приглашаем к сотрудничеству дилеров!</p>
-          <div class="map__text-wrap">
-            <p class="map__adress">ул. Большая Конюшенная, д. 19/8</p>
-            <p class="map__adress">Санкт-Петербург</p>
+      <section class="maps">
+        <div class="container">
+          <div class="map__content">
+            <p class="map__cooperation">
+              Приглашаем <br />
+              к сотрудничеству дилеров!
+            </p>
+            <div class="map__text-wrap">
+              <p class="map__adress">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="map__adress">Санкт-Петербург</p>
+            </div>
           </div>
         </div>
+
+        <div id="map"></div>
       </section>
     </main>
     <footer class="footer">
