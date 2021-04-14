@@ -1,0 +1,172 @@
+.select-program {
+  padding-top: 60px;
+}
+
+.select-program__title {
+  margin-bottom: 40px;
+}
+
+.select-program__input-data {
+  max-width: 570px;
+  width: 100%;
+}
+
+.select-program__input {
+  height: 52px;
+  border: 1px solid #e6e6e6;
+  flex-grow: 1;
+  outline: none;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  color: #444444;
+  padding: 18px 20px;
+}
+
+.select-program__input:focus {
+  border: 2px solid #444444;
+}
+
+.select-program__input::placeholder {
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  color: #444444;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: left;
+}
+
+.select-program__decription {
+  color: #111111;
+  line-height: 1.5;
+  text-align: left;
+  max-width: 330px;
+  width: 100%;
+  font-size: 20px;
+}
+
+.select-program__text {
+  font-size: 20px;
+  color: #222222;
+  line-height: 1;
+  margin-right: 16px;
+}
+
+.select-program__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.select-program__item:last-child {
+  margin-bottom: 0;
+}
+
+.select-program__item-radio {
+  margin-bottom: 3px;
+}
+
+.select-program__item-radio:last-child {
+  margin-bottom: 0;
+}
+
+.select-program__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  margin-bottom: 72px;
+}
+
+.select-program__radio-data {
+  max-width: 570px;
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  padding: 24px 28px;
+}
+
+.select-program__radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.select-program__radio + .select-program__text {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.select-program__radio + .select-program__text::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.select-program__radio:not(:disabled):not(:checked)
+  + .select-program__text:hover::before {
+  border-color: #bababa;
+}
+
+.select-program__radio:not(:disabled):active + .select-program__text::before {
+  opacity: 0.3;
+}
+
+.select-program__radio:checked + .select-program__text::before {
+  border-color: #bababa;
+  background-image: url("../../img/radiobutton.png");
+}
+
+.select-program__text:active {
+  opacity: 0.3;
+}
+
+.select-program__submit {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.select-program__btn {
+  width: 568px;
+  height: 52px;
+  transition: all 0.1s ease-in;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+  background-color: #68b738;
+}
+
+.select-program__btn:hover {
+  cursor: pointer;
+  background-color: #5eaa2f;
+}
+
+.select-program__btn:active {
+  cursor: pointer;
+  background-color: #5eaa2f;
+  opacity: 0.3;
+}
+.select-program__required-fields {
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  line-height: 1;
+  text-align: left;
+  text-transform: none;
+  margin-left: 82px;
+}

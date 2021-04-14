@@ -14,9 +14,6 @@
 .catalog__item {
   background-color: #f2f2f2;
   padding: 165px 38px 40px 38px;
-  /* display: flex;
-  flex-direction: column;
-  align-self: flex-end; */
   flex-wrap: wrap;
   position: relative;
   width: 245px;
@@ -106,6 +103,7 @@
   color: #444444;
   background-color: #f2f2f2;
   line-height: 1.25;
+  width: 168px;
   height: 40px;
   margin-top: auto;
 }
