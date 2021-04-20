@@ -1,0 +1,131 @@
+.catalog__title {
+  margin: 60px 0 auto;
+  max-width: 1220px;
+  font-size: 60px;
+  text-transform: none;
+}
+
+.catalog__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.catalog__item {
+  background-color: #f2f2f2;
+  padding: 165px 38px 40px 38px;
+  flex-wrap: wrap;
+  position: relative;
+  width: 245px;
+  margin-top: 150px;
+}
+
+.catalog__item:last-child {
+  background-color: transparent;
+  border: 1px solid #cdcdcd;
+  padding: 55px 38px 40px 38px;
+}
+
+.catalog__picture {
+  position: absolute;
+  bottom: 305px;
+}
+
+.catalog__name {
+  font-size: 20px;
+  color: #111111;
+  line-height: 1;
+  text-align: center;
+  max-width: 140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.catalog__table {
+  margin-top: 16px;
+  border-spacing: 20px;
+  border-collapse: collapse;
+  margin-bottom: 33px;
+}
+
+.catalog__string {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #cdcdcd;
+  padding: 7px 0;
+  width: 168px;
+  max-width: 100%;
+}
+
+.catalog__cell {
+  font-size: 16px;
+  font-family: "Arial",sans-serif;
+  text-transform: none;
+  color: #444444;
+  line-height: 1;
+  text-align: right;
+}
+
+.catalog__btn {
+  height: 40px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #68b738;
+  margin-top: auto;
+  width: 168px;
+  max-width: 100%;
+}
+
+.catalog__btn:hover {
+  color: #ffffff;
+  background-color: #5eaa2f;
+}
+
+.catalog__btn:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.302);
+}
+
+.catalog__description {
+  font-size: 16px;
+  font-family: "Arial",sans-serif;
+  color: #444444;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: none;
+  margin: 16px 0 80px 0;
+}
+
+.catalog__btn--disabled {
+  font-size: 16px;
+  font-family: "Oswald",sans-serif;
+  color: #444444;
+  background-color: #f2f2f2;
+  line-height: 1.25;
+  width: 168px;
+  height: 40px;
+  margin-top: auto;
+}
+
+.catalog__btn--disabled:hover {
+  font-size: 16px;
+  font-family: "Oswald",sans-serif;
+  color: rgb(68, 68, 68);
+  text-transform: uppercase;
+  line-height: 1.25;
+  background-color: #ebebeb;
+}
+
+.catalog__btn--disabled:active {
+  opacity: 0.3;
+  background-color: #ebebeb;
+}
+
+.catalog__plus {
+  margin: 6px auto 55px auto;
+}
+
+.catalog__pic-align {
+  margin: 0 auto;
+}
