@@ -9,6 +9,8 @@
   max-width: 570px;
   margin: 80px 0 55px 0;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
 .categories__card:nth-child(1) {
@@ -38,6 +40,7 @@
   background-position: 132px;
   width: 190px;
   text-align: left;
+  margin-top: auto;
 }
 
 .categories__button:hover {
@@ -47,4 +50,91 @@
 .categories__button:active {
   opacity: 0.3;
   outline: none;
+}
+
+@media (max-width: 1220px) {
+  .categories {
+    flex-direction: column;
+  }
+
+  .categories__card {
+    max-width: 100%;
+  }
+
+  .categories__card {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .categories__card:first-child {
+    margin-bottom: 20px;
+  }
+  .categories__subtitle {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .categories__card {
+    max-width: 708px;
+    width: 100%;
+    padding: 68px 56px 62px 52px;
+    margin-bottom: 26px;
+  }
+
+  .categories__description {
+    max-width: 342px;
+    margin-bottom: 50px;
+  }
+
+  .categories__card:nth-child(1) {
+    background-image: url(../img/cat-slim.200.png);
+    background-position: 350px 19px;
+  }
+
+  .categories__card:nth-child(2) {
+    background-image: url(../img/cat-pro-200.png);
+    background-position: 350px 19px;
+  }
+}
+
+@media (max-width: 667px) {
+  .categories__subtitle {
+    font-size: 24px;
+    margin-left: 90px;
+    margin-bottom: 40px;
+  }
+  .categories__card:nth-child(1) {
+    background-image: url(../img/cat-slim-mobile.png);
+    background-position: 23px 25px;
+  }
+
+  .categories__card:nth-child(2) {
+    background-image: url(../img/cat-weight-mobile.png);
+    background-position: 12px 25px;
+  }
+
+  .categories__card {
+    max-width: 100%;
+    width: 100%;
+    padding: 40px 25px 23px 20px;
+    margin-bottom: 26px;
+  }
+
+  .categories__description {
+    max-width: 100%;
+    margin-bottom: 26px;
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 24px;
+  }
+}
+
+@media (max-width: 414px) {
+  .categories__card {
+    max-width: 280px;
+  }
+
+  .categories__description {
+    max-width: 240px;
+  }
 }
