@@ -126,3 +126,45 @@ button:hover {
   font-size: 60px;
   text-transform: none;
 }
+
+@media (max-width: 1220px) {
+  .container {
+    max-width: 950px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 780px;
+  }
+}
+
+@media (max-width: 812px) {
+  .container {
+    max-width: 708px;
+  }
+}
+
+@media (max-width: 667px) {
+  .container {
+    max-width: 400px;
+  }
+  .title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 414px) {
+  .container {
+    max-width: 280px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

@@ -147,10 +147,6 @@
   user-select: none;
 }
 
-#header__nav__toggle a:hover {
-  color: #68b738;
-}
-
 #header__nav__toggle input {
   display: block;
   width: 40px;

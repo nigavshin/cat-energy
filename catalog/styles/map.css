@@ -25,7 +25,7 @@
 
 .map__adress {
   font-size: 16px;
-  font-family: "Arial",sans-serif;
+  font-family: "Arial", sans-serif;
   color: #444444;
   line-height: 1.25;
   text-align: left;
@@ -35,4 +35,41 @@
 
 .map__adress:first-child {
   margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .map__container {
+    margin-top: 170px;
+  }
+
+  .map__content {
+    width: 100%;
+    left: 50%;
+    position: static;
+    background-color: inherit;
+  }
+
+  .maps {
+    background-color: #f2f2f2;
+  }
+
+  .map__adress {
+    text-align: right;
+  }
+
+  #map {
+    position: static;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 414px) {
+  .map__adress {
+    text-align: left;
+  }
+
+  .map__content {
+   padding:70px  0 54px;
+  }
+
 }
