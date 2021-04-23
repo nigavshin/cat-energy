@@ -170,3 +170,132 @@
   text-transform: none;
   margin-left: 82px;
 }
+
+@media (max-width: 1220px) {
+  .select-program__wrap {
+    flex-direction: column;
+  }
+
+  .select-program__input-data,
+  .select-program__radio-data {
+    max-width: 100%;
+  }
+
+  .select-program__radio-data {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 1014px) {
+  .select-program__required-fields {
+    margin-left: 20px;
+  }
+
+  .select-program__form {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .select-program {
+    padding-top: 43px;
+  }
+
+  .select-program__decription {
+    margin-left: 38px;
+  }
+
+  .select-program__input-data,
+  .select-program__radio-data {
+    margin-left: 42px;
+  }
+
+  .select-program__input-data {
+    max-width: 89%;
+  }
+
+  .select-program__radio-data {
+    margin-top: 70px;
+  }
+
+  .select-program__submit {
+    margin-left: 40px;
+  }
+
+  .select-program__btn {
+    width: 285px;
+  }
+
+  .select-program__required-fields {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 667px) {
+  .select-program__submit {
+    margin-left: 0px;
+  }
+
+  .select-program__decription {
+    margin-left: 0px;
+  }
+
+  .select-program__input-data,
+  .select-program__radio-data {
+    margin-left: 0px;
+  }
+
+  .select-program__input-data {
+    max-width: 100%;
+  }
+
+  .select-program__submit {
+    flex-direction: column;
+  }
+
+  .select-program__btn {
+    width: 100%;
+  }
+
+  .select-program__required-fields {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 414px) {
+  .select-program__text {
+    white-space: nowrap;
+    font-size: 16px;
+  }
+
+  .select-program__input {
+    height: 45px;
+  }
+
+  .select-program__decription {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .select-program__input::placeholder {
+    font-size: 16px;
+  }
+
+  .select-program__radio + .select-program__text::before {
+    width: 30px;
+    height: 30px;
+  }
+
+  .select-program__radio:checked + .select-program__text::before {
+    background-image: url("../../img/radiobutton-mob.png");
+  }
+
+  .select-program__input {
+    width: 100%;
+  }
+
+  .select-program__btn {
+    font-size: 16px;
+  }
+}

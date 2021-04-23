@@ -64,12 +64,26 @@
 }
 
 @media (max-width: 414px) {
-  .map__adress {
-    text-align: left;
+  .map__cooperation {
+    font-size: 16px;
   }
 
   .map__content {
-   padding:70px  0 54px;
+    padding: 70px 0 54px;
+  }
+  .map__adress {
+    font-size: 14px;
+    text-align: left;
   }
 
+  .map__adress:first-child {
+    margin-bottom: 3px;
+  }
+
+  .map__content {
+    padding: 32px 20px;
+  }
+  .map__container {
+    margin-top: 0;
+  }
 }

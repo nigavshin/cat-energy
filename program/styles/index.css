@@ -190,3 +190,100 @@ fieldset {
   margin: 0;
   padding: 0;
 }
+
+@media (max-width: 1220px) {
+  .container {
+    max-width: 950px;
+  }
+
+  .contacts__subtitle::before {
+    top: 20px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 780px;
+  }
+}
+
+@media (max-width: 812px) {
+  .container {
+    max-width: 708px;
+  }
+}
+
+@media (max-width: 768px) {
+  .subtitle {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 667px) {
+  .container {
+    max-width: 400px;
+  }
+  .title {
+    font-size: 50px;
+  }
+
+  .subtitle {
+    margin-left: 0px;
+  }
+
+  .contacts__subtitle::before {
+    width: 355px;
+  }
+
+  .contacts__subtitle__line {
+    bottom: 50px;
+  }
+}
+
+@media (max-width: 414px) {
+  .container {
+    max-width: 280px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .contacts__subtitle::before {
+    left: 40px;
+    width: 355px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+
+  .contacts__subtitle::before {
+    left: -20px;
+    top: 10px;
+    width: 240px;
+  }
+
+  .subtitle__line {
+    bottom: 10px;
+  }
+
+  .contacts__subtitle__line {
+    bottom: 35px;
+  }
+
+  .comments__subtitle::before {
+    top: 12px;
+    width: 190px;
+  }
+
+  .additionally__subtitle::before {
+    top: 12px;
+    width: 210px;
+  }
+}

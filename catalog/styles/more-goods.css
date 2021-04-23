@@ -290,4 +290,13 @@
     left: -80px;
     width: 360px;
   }
+
+  .more-goods__gift {
+    flex-direction: column;
+    padding-left: 45px;
+  }
+
+  .more-goods__offer {
+    text-align: center;
+  }
 }

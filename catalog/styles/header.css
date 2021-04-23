@@ -75,7 +75,7 @@
   visibility: visible;
 }
 
-main-screen__product-desktop {
+.main-screen__product-desktop {
   margin: 22px 0 60px 0;
 }
 
@@ -319,5 +319,14 @@ main-screen__product-desktop {
 
   #header__nav--list {
     padding: 25px 142px;
+    top: 41px;
+  }
+
+  .header__logo-link {
+    padding-top: 0;
+  }
+
+  .header {
+    padding-top: 0;
   }
 }

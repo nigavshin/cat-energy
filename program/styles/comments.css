@@ -28,3 +28,21 @@
   text-transform: uppercase;
   line-height: 1.5;
 }
+
+@media (max-width: 768px) {
+  .comments__textarea {
+    margin-left: 40px;
+    width: 89%;
+  }
+}
+
+@media (max-width: 667px) {
+  .comments__textarea {
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .comments__textarea::placeholder {
+    font-size: 16px;
+  }
+}
