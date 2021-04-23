@@ -1,3 +1,7 @@
+.advantages {
+  padding-bottom: 130px;
+}
+
 .advantages__list {
   display: flex;
   justify-content: space-between;
@@ -68,6 +72,9 @@
   .advantages__description:nth-child(3),
   .advantages__description:nth-child(4) {
     margin-top: 105px;
+  }
+  .advantages {
+    padding-bottom: 0px;
   }
 }
 
