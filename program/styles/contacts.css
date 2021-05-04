@@ -1,0 +1,156 @@
+.contacts__data {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 72px;
+  margin-bottom: 72px;
+}
+
+.contacts__text {
+  font-size: 20px;
+  color: #222222;
+  line-height: 1;
+  text-align: left;
+}
+
+.contacts__item {
+  position: relative;
+}
+.contacts__input {
+  height: 52px;
+  border: 2px solid #e6e6e6;
+  margin-left: 20px;
+}
+
+.contacts__pic-mail {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 17px;
+  height: 13px;
+  fill: #222222;
+  border: none;
+}
+
+.contacts__pic-phone {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  fill: #222222;
+  border: none;
+}
+
+input[type="email"],
+input[type="tel"] {
+  width: 485px;
+  max-width: 100%;
+  padding: 18px 20px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  color: #444444;
+  outline: none;
+}
+
+.contacts__input:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.contacts__input:focus {
+  border: 2px solid #444444;
+  outline: none;
+}
+
+.contacts__input:focus + .contacts__pic-mail {
+  fill: #68b738;
+}
+
+.contacts__input:focus + .contacts__pic-phone {
+  fill: #68b738;
+}
+
+.contacts__input::placeholder {
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  color: #444444;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: left;
+}
+
+@media (max-width: 1220px) {
+  .contacts__data {
+    flex-direction: column;
+  }
+
+  .contacts__item {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+  }
+
+  .contacts__text {
+    white-space: nowrap;
+  }
+
+  input[type="email"],
+  input[type="tel"] {
+    width: 100%;
+  }
+
+  .contacts__item:last-child {
+    padding-top: 25px;
+  }
+
+  .contacts__pic-phone {
+    top: 40px;
+    right: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__data {
+    margin-left: 40px;
+    width: 89%;
+  }
+}
+
+@media (max-width: 667px) {
+  .contacts__data {
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 414px) {
+  .contacts__text {
+    font-size: 16px;
+  }
+
+  .contacts__input {
+    height: 46px;
+    margin-left: 12px;
+  }
+
+  input[type="email"],
+  input[type="tel"] {
+    padding: 16px;
+  }
+
+  .contacts__input::placeholder {
+    font-size: 16px;
+  }
+
+  .contacts__pic-mail {
+    right: 15px;
+  }
+
+  .contacts__subtitle::before {
+    left: -20px;
+    top: 10px;
+    width: 200px;
+    background-color: red;
+  }
+}
+

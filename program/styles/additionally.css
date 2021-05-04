@@ -1,0 +1,118 @@
+.additionally__list {
+  display: flex;
+  margin-top: 72px;
+}
+
+.additionally__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.additionally__item {
+  width: 245px;
+  margin-left: 80px;
+}
+
+.additionally__item:first-child {
+  margin-left: 0;
+}
+
+.additionally__input + .additionally__text {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.additionally__input + .additionally__text::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #cdcdcd;
+  margin-right: 18px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.additionally__input:not(:disabled):not(:checked)
+  + .additionally__text:hover::before {
+  border-color: #bababa;
+}
+
+.additionally__input:not(:disabled):active + .additionally__text::before {
+  opacity: 0.3;
+}
+
+.additionally__input:focus:not(:checked) + .additionally__text::before {
+  border-color: #80bdff;
+}
+
+.additionally__input:checked + .additionally__text::before {
+  background-image: url("../../img/icon-tick.svg");
+}
+
+@media (max-width: 1220px) {
+  .additionally__item {
+    width: 190px;
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .additionally__item {
+    width: 170px;
+    margin-left: 20px;
+  }
+
+  .additionally__list {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 812px) {
+  .additionally__item {
+    width: 330px;
+    margin-left: 0px;
+  }
+
+  .additionally__item:nth-child(3),
+  .additionally__item:nth-child(4) {
+    margin-top: 35px;
+  }
+
+  .additionally__list {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .additionally__list {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 667px) {
+  .additionally__list {
+    margin-left: 0px;
+  }
+
+  .additionally__item:nth-child(2) {
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 414px) {
+  .additionally__item {
+    width: 100%;
+  }
+
+  .additionally__input + .additionally__text::before {
+    width: 30px;
+    height: 30px;
+  }
+}

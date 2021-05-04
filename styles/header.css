@@ -1,0 +1,413 @@
+.main-screen {
+  background-image: url(../img/index-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav--list {
+  display: flex;
+  justify-content: space-between;
+  width: 477px;
+  max-width: 100%;
+}
+
+.header__nav-toggle {
+  visibility: hidden;
+}
+
+.header__nav--list {
+  visibility: visible;
+}
+
+.header__logo-link:hover,
+.header__logo-link:focus {
+  opacity: 0.6;
+}
+
+.header__logo-link:active {
+  opacity: 0.3;
+}
+
+.header__link {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.header__link:hover,
+.header__link:focus {
+  opacity: 0.6;
+}
+
+.header__link:active {
+  opacity: 0.3;
+}
+
+.header__link--active {
+  position: relative;
+}
+
+.header__link--active::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.main-screen__content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.main-screen__title {
+  font-size: 60px;
+  margin-bottom: 33px;
+  max-width: 450px;
+  line-height: 60px;
+  text-transform: none;
+}
+
+.main-screen__text-wrapper {
+  margin-bottom: 80px;
+  position: relative;
+  left: 83px;
+}
+
+.main-screen__description {
+  font-size: 20px;
+  margin-bottom: 53px;
+}
+
+.main-screen__button {
+  width: 245px;
+  height: 52px;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #68b738;
+  outline: none;
+}
+
+.main-screen__product-desktop {
+  margin: 22px 0 60px 0;
+}
+
+.main-screen__product-tablet {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header__logo--desktop {
+  width: 202px;
+  height: 70px;
+}
+
+.header__logo--mobile {
+  width: 38px;
+  height: 38px;
+}
+
+.header__header__logo {
+  visibility: hidden;
+}
+
+/* БУРГЕР */
+.header__nav {
+  position: relative;
+}
+
+.header__nav-toggle {
+  z-index: 100;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.header__nav-toggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -10px;
+  left: -12px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 300;
+}
+
+.header__nav-toggle span {
+  display: block;
+  width: 28px;
+  height: 2px;
+  margin-bottom: 6px;
+  position: relative;
+  background: #222222;
+  border-radius: 3px;
+  z-index: 300;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+.header__nav-toggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+.header__nav-toggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+.header__nav-toggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+.header__nav-toggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.header__nav-toggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+.header__nav-toggle input:checked ~ ul {
+  transform: none;
+}
+
+@media (max-width: 1024px) {
+  .main-screen {
+    background-image: inherit;
+  }
+
+  .main-screen__text-wrapper {
+    margin-top: 67px;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 90;
+  }
+
+  .main-screen__product-desktop {
+    margin: 0;
+    position: relative;
+    top: -90px;
+    left: 80px;
+  }
+
+  .main-screen__content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header__link {
+    font-size: 20px;
+    color: #111111;
+    white-space: nowrap;
+  }
+
+  .header__link:hover,
+  .header__link:focus {
+    opacity: 0.6;
+  }
+
+  .header__link:active {
+    opacity: 0.3;
+  }
+
+  .header__link--active::after {
+    background-color: #68b738;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__logo--desktop {
+    width: 173px;
+    height: 58px;
+  }
+  .main-screen {
+    padding-top: 20px;
+  }
+
+  .header__menu {
+    max-width: 440px;
+  }
+
+  .header__link {
+    font-size: 18px;
+    color: #111111;
+  }
+
+  .main-screen__text-wrapper {
+    margin-top: 52px;
+    margin-bottom: 52px;
+  }
+
+  .main-screen__title {
+    margin-bottom: 35px;
+    font-size: 50px;
+  }
+
+  .main-screen__description {
+    margin-bottom: 38px;
+  }
+  .main-screen__product-desktop {
+    top: -78px;
+    left: 35px;
+    width: 95%;
+  }
+}
+
+@media (max-width: 667px) {
+  .main-screen {
+    padding-top: 0;
+  }
+
+  .main-screen__title,
+  .main-screen__description {
+    text-align: center;
+  }
+
+  .main-screen__content {
+    margin-left: 0;
+  }
+
+  .main-screen__text-wrapper {
+    left: 0;
+  }
+
+  .main-screen__product-desktop {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .main-screen__button {
+    width: 100%;
+  }
+
+  .main-screen__product-tablet {
+    position: relative;
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+    margin: 1px;
+    clip-path: none;
+  }
+
+  .header__wrapper {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: #ffffff;
+    padding: 15px 0;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .header__nav {
+    margin-top: 10px;
+    visibility: visible;
+  }
+
+  .header__header__logo {
+    visibility: visible;
+  }
+
+  .header__logo--desktop {
+    width: 38px;
+    height: 38px;
+  }
+
+  .header__nav--list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 380px;
+    top: 43px;
+    right: 0;
+    padding: 25px 200px;
+    background: #ffffff;
+    transform: translate(0, -140%);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    z-index: 100;
+    border: 1px solid #e6e6e6;
+  }
+
+  .header__nav-toggle {
+    visibility: visible;
+  }
+
+  .header__nav-toggle a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
+  }
+
+  .header__item {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 414px) {
+  .main-screen {
+    background-image: url(../img/index-background-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px 60px;
+    padding-top: 0;
+  }
+
+  .main-screen__title {
+    font-size: 36px;
+    margin-bottom: 27px;
+    line-height: 30px;
+    text-transform: none;
+    color: #ffffff;
+  }
+
+  .main-screen__description {
+    color: #ffffff;
+    font-size: 14px;
+  }
+
+  .main-screen__content {
+    margin-top: 24px;
+  }
+
+  .main-screen__product-desktop {
+    top: -300px;
+    left: 0;
+  }
+
+  .header__nav--list {
+    padding: 25px 142px;
+  }
+
+}
