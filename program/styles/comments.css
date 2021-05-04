@@ -29,6 +29,22 @@
   line-height: 1.5;
 }
 
+.comments__textarea::-webkit-input-placeholder {
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  color: #444444;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.comments__textarea::-moz-placeholder {
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  color: #444444;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
 @media (max-width: 768px) {
   .comments__textarea {
     margin-left: 40px;
