@@ -1,17 +1,9 @@
+@import url("./fonts.css");
 @import url("./header.css");
 @import url("./catalog.css");
 @import url("./map.css");
 @import url("./footer.css");
 @import url("./more-goods.css");
-
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/Oswald/Oswald-Regular.woff2) format("woff2"),
-    url(../fonts/Oswald/Oswald-Regular.woff) format("woff");
-  font-display: swap;
-}
 
 html,
 body {

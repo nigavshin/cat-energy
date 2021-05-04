@@ -46,6 +46,8 @@
   margin-bottom: 20px;
 }
 
+
+
 @media (max-width: 1220px) {
   .map__container {
     max-width: 780px;

@@ -1,5 +1,5 @@
 .footer {
-  margin-top: -70px;
+  padding: 50px 0;
 }
 
 .footer__wrapper {
@@ -23,9 +23,11 @@
 .footer__item {
   margin-left: 30px;
 }
+
 .footer__item:last-child {
   margin-right: 0;
 }
+
 .copyright__text {
   margin-right: 30px;
   font-size: 16px;
@@ -42,7 +44,8 @@
   fill: #696969;
 }
 
-.footer__img:hover {
+.footer__img:hover,
+.footer__img:focus {
   fill: #68b738;
   cursor: pointer;
 }
@@ -52,7 +55,8 @@
   cursor: pointer;
 }
 
-.footer__logo:hover {
+.footer__logo:hover,
+.footer__logo:focus {
   opacity: 0.8;
 }
 
@@ -60,7 +64,8 @@
   opacity: 0.3;
 }
 
-.copyright__text:hover {
+.copyright__text:hover,
+.copyright__text:focus{
   opacity: 0.8;
 }
 

@@ -12,7 +12,8 @@
   width: 100%;
 }
 
-.header__logo-link:hover {
+.header__logo-link:hover,
+.header__logo-link:focus {
   opacity: 0.6;
 }
 
@@ -25,7 +26,8 @@
   color: #111111;
 }
 
-.header__link:hover {
+.header__link:hover,
+.header__link:focus {
   opacity: 0.6;
 }
 
@@ -60,18 +62,18 @@
   margin-top: 84px;
 }
 
-#header__nav--list {
+.header__nav--list {
   display: flex;
   justify-content: space-between;
   width: 477px;
   max-width: 100%;
 }
 
-#header__nav__toggle {
+.header__nav-toggle {
   visibility: hidden;
 }
 
-#header__nav--list {
+.header__nav--list {
   visibility: visible;
 }
 
@@ -111,17 +113,17 @@
   position: relative;
 }
 
-#header__nav__toggle {
+.header__nav-toggle {
   z-index: 100;
   -webkit-user-select: none;
   user-select: none;
 }
 
-#header__nav__toggle a:hover {
+.header__nav-toggle a:hover {
   color: #68b738;
 }
 
-#header__nav__toggle input {
+.header__nav-toggle input {
   display: block;
   width: 40px;
   height: 32px;
@@ -133,7 +135,7 @@
   z-index: 300;
 }
 
-#header__nav__toggle span {
+.header__nav-toggle span {
   display: block;
   width: 28px;
   height: 2px;
@@ -147,30 +149,30 @@
     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
-#header__nav__toggle span:first-child {
+.header__nav-toggle span:first-child {
   transform-origin: 0% 0%;
 }
 
-#header__nav__toggle span:nth-last-child(2) {
+.header__nav-toggle span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
 
-#header__nav__toggle input:checked ~ span {
+.header__nav-toggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
 }
 
-#header__nav__toggle input:checked ~ span:nth-last-child(3) {
+.header__nav-toggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-#header__nav__toggle input:checked ~ span:nth-last-child(2) {
+.header__nav-toggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-#header__nav__toggle input:checked ~ ul {
+.header__nav-toggle input:checked ~ ul {
   transform: none;
 }
 
@@ -221,7 +223,7 @@
     padding-top: 20px;
   }
 
-  #header__nav--list {
+  .header__nav--list {
     width: 440px;
   }
 
@@ -279,7 +281,7 @@
     height: 38px;
   }
 
-  #header__nav--list {
+  .header__nav--list {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -297,11 +299,11 @@
     border: 1px solid #e6e6e6;
   }
 
-  #header__nav__toggle {
+  .header__nav-toggle {
     visibility: visible;
   }
 
-  #header__nav__toggle a {
+  .header__nav-toggle a {
     text-decoration: none;
     color: #232323;
     transition: color 0.3s ease;
@@ -317,7 +319,7 @@
     padding-top: 0;
   }
 
-  #header__nav--list {
+  .header__nav--list {
     padding: 25px 142px;
     top: 41px;
   }
